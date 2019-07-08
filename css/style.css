@@ -1,0 +1,42 @@
+html {
+  background: url('../img/aklo91tile.png') repeat center center fixed;
+  background-color: #000;
+}
+
+* {
+  cursor: url('../img/aklocursor.png'), default;
+}
+
+*:active {
+  cursor: url('../img/aklocursor.png'), default;
+}
+
+.homecontainer {
+  display: grid;
+  grid-template: 10% 80% 10% / 1fr 1fr 1fr;
+  grid-template-areas:
+  "header header header"
+  "main main main"
+  "footer footer footer";
+}
+
+.nav {
+  grid-area: header;
+  background-color: #FF0000;
+}
+
+.homemain {
+  grid-area: main;
+  background-color: #00FF00;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #0000FF;
+}
+
+#myVideo {
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+}
