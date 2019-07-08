@@ -1,6 +1,6 @@
 html {
   background-color: #000;
-  font-family: Arial Black, Helvetica, Courier, sans-serif;
+  font-family: Helvetica, Courier, sans-serif;
 }
 
 * {
@@ -17,7 +17,7 @@ body {
 
 #homecontainer {
   display: grid;
-  grid-template: 8% 1fr 8% / 3% 1fr 3%;
+  grid-template: 80px 1fr 75px / 3% 1fr 3%;
   grid-template-areas:
   "header header header"
   ". main ."
@@ -53,10 +53,62 @@ body {
   height: 100%;
 }
 
+.navtoggle {
+  display: none;
+}
+
+.navtoggle:checked ~ nav {
+  transform: scale(1, 1);
+}
+
+.navtoggle:checked ~ nav a {
+  opacity: 1;
+}
+
+.navtogglelabel {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.navtogglelabel span,
+.navtogglelabel span::before,
+.navtogglelabel span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 2em;
+  position: relative;
+}
+
+.navtogglelabel span::before,
+.navtogglelabel span::after {
+  content: '';
+  position: absolute;
+}
+
+.navtogglelabel span::before {
+  bottom: 7px;
+}
+
+.navtogglelabel span::after {
+  top: 7px;
+}
+
 nav {
   position: absolute;
   text-align: left;
   left: 0;
+  background: #000;
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform .2s ease-in-out;
 }
 
 nav ul {
@@ -66,14 +118,21 @@ nav ul {
 }
 
 nav li {
-  margin-top: 1em;
-  margin-left: 1em;
+  margin: 1em;
 }
 
 nav a {
   color: #fff;
+  opacity: 0;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  font-style: italic;
+  transition: opacity .1s ease-in-out .1s;
+}
+
+nav a:hover {
+  color: #555;
 }
 
 #homemain {
@@ -95,6 +154,7 @@ footer {
 footer p {
   color: #fff;
   font-size: 7pt;
+  font-style: italic;
 }
 
 footer a {
