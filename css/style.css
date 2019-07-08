@@ -1,42 +1,57 @@
 html {
-  background: url('../img/aklo91tile.png') repeat center center fixed;
-  background-color: #000;
+  background-color: #FFF;
 }
 
 * {
-  cursor: url('../img/aklocursor.png'), default;
+  cursor: url('img/aklocursor.png'), default;
 }
 
 *:active {
-  cursor: url('../img/aklocursor.png'), default;
+  cursor: url('img/aklocursor.png'), default;
+}
+
+body {
+  margin: 0 auto;
 }
 
 .homecontainer {
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
   display: grid;
-  grid-template: 10% 80% 10% / 1fr 1fr 1fr;
+  grid-template: 8% 84% 8% / 3% 1fr 3%;
   grid-template-areas:
   "header header header"
-  "main main main"
+  ". main ."
   "footer footer footer";
+  justify-items: center;
 }
 
 .nav {
   grid-area: header;
-  background-color: #FF0000;
+  background-color: #000;
+  opacity: .90;
+  width: 100%;
 }
 
 .homemain {
   grid-area: main;
-  background-color: #00FF00;
+  align-self: center;
 }
 
 .footer {
   grid-area: footer;
-  background-color: #0000FF;
+  background-color: #000;
+  opacity: .90;
+  width: 100%;
 }
 
 #myVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
   min-width: 100%;
   min-height: 100%;
   margin: 0 auto;
+  z-index: -1;
 }
