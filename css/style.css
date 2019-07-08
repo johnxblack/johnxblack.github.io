@@ -15,7 +15,7 @@ body {
 }
 
 .homecontainer {
-  z-index: 0;
+  z-index: 1;
   margin: 0 auto;
   width: 100vw;
   height: 100vh;
@@ -28,11 +28,23 @@ body {
   justify-items: center;
 }
 
+.logo {
+  transition: .5s ease;
+}
+
+.logo:hover {
+  -ms-transform: scale(2); /* IE 9 */
+  -webkit-transform: scale(2); /* Safari prior 9.0 */
+  transform: scale(2); /* Standard syntax */
+}
+
 .nav {
   grid-area: header;
   background-color: #000;
   opacity: .90;
   width: 100%;
+  height: 100%;
+  align-self: center;
 }
 
 .homemain {
@@ -45,6 +57,25 @@ body {
   background-color: #000;
   opacity: .90;
   width: 100%;
+  height: 100%;
+  align-self: center;
+  justify-content: center;
+}
+
+.footer p {
+  color: #fff;
+  font-size: 12px;
+}
+
+.footer a {
+    padding-right: 1%;
+    transition: .3s ease;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+  opacity: .5;
 }
 
 #myVideo {
