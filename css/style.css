@@ -34,13 +34,6 @@ body {
 
 #logo {
   width: 100%;
-  transition: .5s ease;
-}
-
-#logo:hover {
-  -ms-transform: scale(1); /* IE 9 */
-  -webkit-transform: scale(1); /* Safari prior 9.0 */
-  transform: scale(1); /* Standard syntax */
 }
 
 #maincontainer {
@@ -147,7 +140,7 @@ nav {
   width: 100%;
   transform: scale(1, 0);
   transform-origin: top;
-  transition: transform .2s ease-in-out;
+  transition: transform .1s ease-in-out;
 }
 
 nav ul {
@@ -167,7 +160,7 @@ nav a {
   font-size: 1.25rem;
   font-weight: bold;
   font-style: italic;
-  transition: opacity .1s ease-in-out .1s;
+  transition: opacity .1s ease-in-out;
 }
 
 nav a:hover {
@@ -198,7 +191,7 @@ footer p {
 }
 
 footer a {
-    transition: .3s ease;
+    transition: .2s ease;
     text-decoration: none;
     color: #fff;
     padding-right: 1%;
@@ -274,7 +267,7 @@ footer a:hover {
 
 #logo {
   width: 33%;
-  transition: .5s ease;
+  transition: .3s ease;
 }
 
 #logo:hover {
@@ -299,7 +292,7 @@ nav ul {
 nav a {
   opacity: 1;
   font-size: 1rem;
-  transition: .2s ease;
+  transition: .1s ease;
   position: relative;
 }
 
