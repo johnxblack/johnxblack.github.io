@@ -59,6 +59,7 @@ body {
   display: grid;
   grid-area: main;
   margin: 2%;
+  transform-style: preserve-3d;
 }
 
 #aboutphoto {
