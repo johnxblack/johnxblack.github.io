@@ -124,7 +124,7 @@ nav a {
   color: #fff;
   opacity: 0;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: bold;
   font-style: italic;
   transition: opacity .1s ease-in-out .1s;
@@ -229,6 +229,7 @@ nav ul {
 
 nav a {
   opacity: 1;
+  font-size: 1rem;
   transition: .2s ease;
   position: relative;
 }
