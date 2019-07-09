@@ -1,5 +1,6 @@
 html {
   font-family: Helvetica, Courier, sans-serif;
+  height: 100%;
 }
 
 * {
@@ -12,7 +13,14 @@ html {
 
 body {
   margin: 0 auto;
+  height: 100%;
   background-image: url("../img/background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  perspective: 1px;
+  transform-style: preserve-3d;
 }
 
 #homecontainer {
@@ -44,12 +52,18 @@ body {
   "main main main main"
   "footer footer footer footer";
   width: 100vw;
+  transform-style: preserve-3d;
 }
 
 #aboutmain {
   display: grid;
   grid-area: main;
   margin: 2%;
+}
+
+#aboutphoto {
+  z-index: -1;
+  transform: translateZ(-2px) scale(3) translateY(-40px);
 }
 
 #aboutblock01 {
@@ -63,6 +77,7 @@ body {
   padding: 2%;
   width: 75%;
   text-align: justify;
+  z-index: 1;
 }
 
 .about {
@@ -182,6 +197,7 @@ footer {
   text-shadow: 1px 1px 1px #AAA;
   text-align: center;
   padding-top: .5%;
+  z-index: 999;
 }
 
 footer p {
@@ -210,6 +226,7 @@ footer a:hover {
   justify-content: center;
   text-shadow: 1px 1px 1px #AAA;
   text-align: center;
+  z-index: 999;
 }
 
 #homefooter p {
