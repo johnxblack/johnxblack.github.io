@@ -12,6 +12,7 @@ html {
 
 body {
   margin: 0 auto;
+  background-image: url("../img/background.jpg");
 }
 
 #homecontainer {
@@ -20,10 +21,15 @@ body {
   grid-template-areas:
   "header header header"
   ". main ."
-  ". footer .";
+  "footer footer footer";
   width: 100vw;
   height: 100vh;
   align-items: center;
+}
+
+#homemain {
+  grid-area: main;
+  align-self: center;
 }
 
 #logo {
@@ -35,6 +41,39 @@ body {
   -ms-transform: scale(1); /* IE 9 */
   -webkit-transform: scale(1); /* Safari prior 9.0 */
   transform: scale(1); /* Standard syntax */
+}
+
+#maincontainer {
+  display: grid;
+  grid-template: 80px 1fr 75px / 3% 1fr 1fr 3%;
+  grid-template-areas:
+  "header header header header"
+  "main main main main"
+  "footer footer footer footer";
+  width: 100vw;
+}
+
+#aboutmain {
+  display: grid;
+  grid-area: main;
+  margin: 2%;
+}
+
+#aboutblock01 {
+  display: grid;
+  justify-self: end;
+  position: relative;
+  top: -15%;
+  background: black;
+  color: #DDD;
+  padding: 2%;
+  width: 80%;
+  text-align: justify;
+}
+
+.about {
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .header {
@@ -134,12 +173,12 @@ nav a:hover {
   color: #555;
 }
 
-#homemain {
-  grid-area: main;
-  align-self: center;
-}
+
 
 footer {
+  position: fixed;
+  bottom: 0;
+  background: black;
   display: grid;
   grid-auto-flow: row;
   grid-area: footer;
@@ -148,6 +187,7 @@ footer {
   justify-content: center;
   text-shadow: 1px 1px 1px #AAA;
   text-align: center;
+  padding-top: .5%;
 }
 
 footer p {
@@ -164,6 +204,34 @@ footer a {
 }
 
 footer a:hover {
+  opacity: .5;
+}
+
+#homefooter {
+  display: grid;
+  grid-auto-flow: row;
+  grid-area: footer;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 1px 1px 1px #AAA;
+  text-align: center;
+}
+
+#homefooter p {
+  color: #fff;
+  font-size: 7pt;
+  font-style: italic;
+}
+
+#homefooter a {
+    transition: .3s ease;
+    text-decoration: none;
+    color: #fff;
+    padding-right: 1%;
+}
+
+#homefooter a:hover {
   opacity: .5;
 }
 
@@ -184,7 +252,7 @@ footer a:hover {
   min-width: 100%;
   min-height: 100%;
   margin: 0 auto;
-  z-index: -2;
+  z-index: -1;
 }
 
 @media (min-width: 768px){
