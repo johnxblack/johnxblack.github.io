@@ -62,12 +62,13 @@ body {
 #aboutblock01 {
   display: grid;
   justify-self: end;
+  margin-left: auto;
   position: relative;
   top: -15%;
   background: black;
   color: #DDD;
   padding: 2%;
-  width: 80%;
+  width: 75%;
   text-align: justify;
 }
 
