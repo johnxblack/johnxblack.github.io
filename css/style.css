@@ -63,7 +63,7 @@ body {
 
 #aboutphoto {
   z-index: -1;
-  transform: translateZ(-2px) scale(3) translateY(-40px);
+  transform: translateZ(-2px) scale(3);
 }
 
 #aboutblock01 {
