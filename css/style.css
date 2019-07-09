@@ -379,12 +379,13 @@ nav a:hover::before {
 }
 
 #aboutphoto4 {
+  margin-left: auto;
   display: flex;
-  justify-self: end;
   width: 25%;
   position: absolute;
   margin-top: 8%;
   margin-right: 7%;
+  margin-left: 60%;
 }
 
 #aboutblock01 {
