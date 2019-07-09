@@ -13,14 +13,29 @@ html {
 
 body {
   margin: 0 auto;
-  height: 100%;
-  background-image: url("../img/background.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   perspective: 1px;
   transform-style: preserve-3d;
+  overflow-x: hidden;
+}
+
+#myVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+  z-index: -1;
+}
+
+#myVideo2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+  z-index: -1;
 }
 
 #homecontainer {
@@ -52,19 +67,25 @@ body {
   "main main main main"
   "footer footer footer footer";
   width: 100vw;
-  transform-style: preserve-3d;
+  overflow-x: hidden;
 }
 
 #aboutmain {
   display: grid;
   grid-area: main;
-  margin: 2%;
-  transform-style: preserve-3d;
+  margin: 3%;
 }
 
-#aboutphoto {
-  z-index: -1;
-  transform: translateZ(-2px) scale(3);
+#aboutphoto2 {
+  position: relative;
+  top: -30%;
+  justify-self: center;
+}
+
+#aboutphoto3 {
+  position: relative;
+  top: -100%;
+  margin-left: auto;
 }
 
 #aboutblock01 {
@@ -255,16 +276,6 @@ footer a:hover {
 
 #footrow2 {
   width: 260px;
-}
-
-#myVideo {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  margin: 0 auto;
-  z-index: -1;
 }
 
 @media (min-width: 768px){
