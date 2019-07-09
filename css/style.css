@@ -20,7 +20,7 @@ body {
   grid-template-areas:
   "header header header"
   ". main ."
-  "footer footer footer";
+  ". footer .";
   width: 100vw;
   height: 100vh;
   align-items: center;
@@ -173,6 +173,10 @@ footer a:hover {
   align-items: center;
 }
 
+#footrow2 {
+  width: 260px;
+}
+
 #myVideo {
   position: fixed;
   top: 0;
@@ -181,4 +185,74 @@ footer a:hover {
   min-height: 100%;
   margin: 0 auto;
   z-index: -2;
+}
+
+@media (min-width: 768px){
+
+.navtogglelabel {
+  display: none;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr 1fr;
+}
+
+#navlogo {
+  padding-left: 4%;
+  justify-content: start;
+}
+
+#logo {
+  width: 33%;
+  transition: .5s ease;
+}
+
+#logo:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari prior 9.0 */
+  transform: scale(1.5); /* Standard syntax */
+}
+
+nav {
+  all: unset;
+  grid-column: 3 / 4;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+nav ul {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+nav a {
+  opacity: 1;
+  transition: .2s ease;
+  position: relative;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 3px;
+  background: #DDD;
+  position: absolute;
+  bottom: -.75em;
+  left: 0;
+  right: 0;
+  transform: scale(0, 1);
+  transform-origin: left;
+  transition: transform ease-in-out 250ms;
+}
+
+nav a:hover {
+  color: #555;
+}
+
+nav a:hover::before {
+  transform: scale(1,1);
+}
+
 }
