@@ -13,8 +13,6 @@ html {
 
 body {
   margin: 0 auto;
-  perspective: 1px;
-  transform-style: preserve-3d;
   overflow-x: hidden;
 }
 
@@ -48,6 +46,7 @@ body {
   width: 100vw;
   height: 100vh;
   align-items: center;
+  overflow-y: hidden;
 }
 
 #homemain {
@@ -76,16 +75,26 @@ body {
   margin: 3%;
 }
 
+#aboutphoto {
+  width: 90%;
+}
+
 #aboutphoto2 {
+  width: 90%;
   position: relative;
   top: -30%;
   justify-self: center;
 }
 
 #aboutphoto3 {
+  width: 60%;
   position: relative;
   top: -100%;
   margin-left: auto;
+}
+
+#aboutphoto4 {
+  display: none;
 }
 
 #aboutblock01 {
@@ -345,6 +354,51 @@ nav a:hover {
 
 nav a:hover::before {
   transform: scale(1,1);
+}
+
+#aboutphoto {
+  display: grid;
+  width: 50%;
+  margin-right: auto;
+  margin-left: 10%;
+}
+
+#aboutphoto2 {
+  width: 40%;
+  position: relative;
+  top: -25%;
+  justify-self: center;
+}
+
+#aboutphoto3 {
+  width: 30%;
+  position: relative;
+  top: -100%;
+  margin-left: auto;
+  margin-right: 20%;
+}
+
+#aboutphoto4 {
+  display: flex;
+  justify-self: end;
+  width: 25%;
+  position: absolute;
+  margin-top: 8%;
+  margin-right: 7%;
+}
+
+#aboutblock01 {
+  display: grid;
+  justify-self: end;
+  margin-left: auto;
+  position: relative;
+  top: -35%;
+  background: black;
+  color: #DDD;
+  padding: 2%;
+  width: 75%;
+  text-align: justify;
+  z-index: 1;
 }
 
 }
