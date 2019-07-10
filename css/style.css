@@ -69,6 +69,35 @@ body {
   grid-area: main;
 }
 
+#videomain {
+  grid-area: main;
+  padding-top: 1%;
+  padding-bottom: 5%;
+}
+
+#videomain iframe {
+  margin-bottom: 3%;
+}
+
+#videomain h1 {
+  color: white;
+}
+
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
 #contactform {
   width: 100%;
   background-color: #000;
@@ -494,6 +523,11 @@ nav a:hover::before {
   width: 70%;
   text-align: justify;
   z-index: 1;
+}
+
+.videocenter {
+  align: center;
+  width: 60%;
 }
 
 #contactform {
