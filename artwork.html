@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/uikit.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -98,77 +99,76 @@
           </ul>
         </nav>
       </div>
-      <div id="artmain" align="center">
+      <div id="artmain" align="center" >
         <h1>3 OF A KIND</h1>
-    <div class="slideshow-container">
+    <div class="slideshow-container" uk-lightbox="animation: fade">
       <div class="mySlides1">
-        <img src="https://i.imgur.com/vWIRFk1.jpg" style="width:100%">
+        <a href="https://i.imgur.com/vWIRFk1.jpg"><img src="https://i.imgur.com/vWIRFk1.jpg" style="width:100%"></a>
       </div>
-
       <div class="mySlides1">
-        <img src="https://i.imgur.com/kPyAOzq.jpg" style="width:100%">
+        <a href="https://i.imgur.com/kPyAOzq.jpg"><img src="https://i.imgur.com/kPyAOzq.jpg" style="width:100%"></a>
       </div>
-
       <div class="mySlides1">
-        <img src="https://i.imgur.com/aACf5qU.jpg" style="width:100%">
+        <a href="https://i.imgur.com/aACf5qU.jpg"><img src="https://i.imgur.com/aACf5qU.jpg" style="width:100%"></a>
       </div>
-
-      <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+      <div class="prev" onclick="plusSlides(-1, 0)">&#10094;</div>
+      <div class="next" onclick="plusSlides(1, 0)">&#10095;</div>
     </div>
-
-    <h1>SERIES 2</h1>
-    <div class="slideshow-container">
+    <h1>ENTERWORKINGS</h1>
+    <div class="slideshow-container" uk-lightbox="animation: fade">
       <div class="mySlides2">
-        <img src="https://i.imgur.com/RwzBd1f.jpg" style="width:100%">
+        <a href="https://i.imgur.com/RwzBd1f.jpg"><img src="https://i.imgur.com/RwzBd1f.jpg" style="width:100%"></a>
       </div>
-
       <div class="mySlides2">
-        <img src="https://i.imgur.com/SpR07AE.jpg" style="width:100%">
+        <a href="https://i.imgur.com/SpR07AE.jpg"><img src="https://i.imgur.com/SpR07AE.jpg" style="width:100%"></a>
       </div>
-
       <div class="mySlides2">
-        <img src="https://i.imgur.com/pWfqilT.jpg" style="width:100%">
+        <a href="https://i.imgur.com/pWfqilT.jpg"><img src="https://i.imgur.com/pWfqilT.jpg" style="width:100%"></a>
       </div>
-
       <div class="mySlides2">
-        <img src="https://i.imgur.com/foHZ5pt.jpg" style="width:100%">
+        <a href="https://i.imgur.com/foHZ5pt.jpg"><img src="https://i.imgur.com/foHZ5pt.jpg" style="width:100%"></a>
       </div>
-
-      <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+      <div class="prev" onclick="plusSlides(-1, 1)">&#10094;</div>
+      <div class="next" onclick="plusSlides(1, 1)">&#10095;</div>
     </div>
-      </div>
-      <div id="homefooter">
+    <h1>INTERSTELLAR</h1>
+    <div uk-lightbox="animation: fade">
+      <a href="https://i.imgur.com/V2GZ6PJ.jpg"><img src="https://i.imgur.com/V2GZ6PJ.jpg" style="width:100%"></a>
+    </div>
+    </div>
+      <footer>
         <div id="footrow1">
-          <a href="https://www.facebook.com/vulture1986/"><img src="img/facebook.svg" height="40px"/></a> <a href="https://www.instagram.com/johnxblack/"><img src="img/instagram.svg" height="40px"/></a> <a href="https://www.youtube.com/user/JClements63"><img src="img/youtube.svg" height="40px"/></a>
+          <a href="https://www.instagram.com/johnxblack/"><img src="img/instagram.svg" height="40px"/></a> <a href="https://www.youtube.com/user/JClements63"><img src="img/youtube.svg" height="40px"/></a>
           <a href="mailto:john@johnxblack.com"> <img src="img/mail.svg" height="40px"/></a> <a href="tel:1-929-990-5096"><img src="img/iphone.svg" height="40px"></a>
         </div>
         <div id="footrow2">
           <p>COPYRIGHT &copy; JOHNXBLACK 2019. WEBSITE BY <a href="http://aklo91.com">ÅKLØ91</a></p>
         </div>
-      </div>
+      </footer>
     </div>
   </body>
   <script>
-  var slideIndex = [1,1];
-  var slideId = ["mySlides1", "mySlides2"]
-  showSlides(1, 0);
-  showSlides(1, 1);
+    var slideIndex = [1,1];
+    var slideId = ["mySlides1", "mySlides2"]
+    showSlides(1, 0);
+    showSlides(1, 1);
 
-  function plusSlides(n, no) {
-    showSlides(slideIndex[no] += n, no);
-  }
-
-  function showSlides(n, no) {
-    var i;
-    var x = document.getElementsByClassName(slideId[no]);
-    if (n > x.length) {slideIndex[no] = 1}
-    if (n < 1) {slideIndex[no] = x.length}
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
+    function plusSlides(n, no) {
+      showSlides(slideIndex[no] += n, no);
     }
-    x[slideIndex[no]-1].style.display = "block";
-  }
+
+    function showSlides(n, no) {
+      var i;
+      var x = document.getElementsByClassName(slideId[no]);
+      if (n > x.length) {slideIndex[no] = 1}
+      if (n < 1) {slideIndex[no] = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex[no]-1].style.display = "block";
+    }
+
   </script>
+  <script src="js/uikit.js"></script>
+  <script src="js/uikit-icons.js"></script>
 </html>

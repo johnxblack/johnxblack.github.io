@@ -62,7 +62,7 @@ body {
   ". main ."
   "footer footer footer";
   width: 100vw;
-  height: 100vh;
+  margin-bottom: 5%;
 }
 
 #artmain {
@@ -251,7 +251,7 @@ footer {
   justify-content: center;
   text-shadow: 1px 1px 1px #AAA;
   text-align: center;
-  padding-top: .5%;
+  padding-top: 1%;
   z-index: 999;
 }
 
