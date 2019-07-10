@@ -32,6 +32,14 @@
     <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <title>CONTACT JOHNXBLACK ART | OFFICIAL WEBSITE</title>
+    <style>
+      .error {
+        color: #FF0000;
+        font-size: 1.5em;
+        display: inline;
+      }
+
+    </style>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -97,12 +105,12 @@
         <div id="contactform" />
         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
           <h1>NAME:</h1>
-          <input type="text" name="name">
+          <input type="text" name="name"><span class="error"> * <?php echo $nameErr;?></span>
           <h1>EMAIL:</h1>
-          <input type="text" name="email">
+          <input type="text" name="email"><span class="error"> * <?php echo $emailErr;?></span>
           <h1>MESSAGE:</h1>
-          <textarea name="message" rows="10" cols="30">
-          </textarea><br><br>
+          <textarea name="message" rows="10" cols="30"></textarea> <span class="error"> * <?php echo $messageErr;?></span>
+            <br><br>
           <input type="submit" value="Submit">
         </form>
         </div>
