@@ -148,7 +148,7 @@ iframe,
 img,
 svg,
 video {
-  vertical-align: middle;
+
 }
 /*
  * 1. Add responsiveness.
@@ -160,11 +160,11 @@ canvas,
 img,
 video {
   /* 1 */
-  max-width: 100%;
+
   /* 2 */
-  height: auto;
+
   /* 3 */
-  box-sizing: border-box;
+
 }
 /* 4 */
 @supports (display: block) {
@@ -199,7 +199,6 @@ iframe {
 /*
  * Margins
  */
-p,
 ul,
 ol,
 dl,
@@ -210,7 +209,6 @@ figure {
   margin: 0 0 20px 0;
 }
 /* Add margin if adjacent element */
-* + p,
 * + ul,
 * + ol,
 * + dl,

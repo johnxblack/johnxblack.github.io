@@ -35,45 +35,42 @@
     <title>JOHNXBLACK ART | OFFICIAL WEBSITE</title>
     <style>
       * {box-sizing: border-box}
-        .mySlides1, .mySlides2 {display: none}
+        .mySlides1, .mySlides2, .mySlides3 {display: none}
           img {vertical-align: middle;}
 
             /* Slideshow container */
               .slideshow-container {
                   max-width: 600px;
-                    position: relative;
-                      margin: auto;
-                      }
-
-                        /* Next & previous buttons */
-                          .prev, .next {
-                              cursor: pointer;
-                                position: absolute;
-                                  top: 50%;
-                                  display: flex;
-                                    width: auto;
-                                      padding: 16px;
-                                        margin-top: -22px;
-                                          color: white;
-                                            font-weight: bold;
-                                              font-size: 18px;
-                                                transition: 0.6s ease;
-                                                  border-radius: 0 3px 3px 0;
-                                                    user-select: none;
-                                                    }
-
-    /* Position the "next button" to the right */
-      .next {
-          right: 0;
-            border-radius: 3px 0 0 3px;
-            }
-
-              /* On hover, add a grey background color */
-                .prev:hover, .next:hover {
+                  position: relative;
+                  margin: auto;
+                  }
+                  /* Next & previous buttons */
+                  .prev, .next {
+                  cursor: pointer;
+                  position: absolute;
+                  top: 50%;
+                  display: flex;
+                  width: auto;
+                  padding: 16px;
+                  margin-top: -22px;
+                  color: white;
+                  font-weight: bold;
+                  font-size: 18px;
+                  transition: 0.6s ease;
+                  border-radius: 0 3px 3px 0;
+                  user-select: none;
+                  }
+                  /* Position the "next button" to the right */
+                  .next {
+                    right: 0;
+                    border-radius: 3px 0 0 3px;
+                  }
+                  /* On hover, add a grey background color */
+                  .prev:hover, .next:hover {
                     background-color: #f1f1f1;
-                      color: black;
-                      }
-                    </style>
+                    color: black;
+                  }
+      </style>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -114,6 +111,17 @@
       <div class="prev" onclick="plusSlides(-1, 0)">&#10094;</div>
       <div class="next" onclick="plusSlides(1, 0)">&#10095;</div>
     </div>
+    <h1>SERIES 2</h1>
+    <div class="slideshow-container" uk-lightbox="animation: fade">
+      <div class="mySlides3">
+        <a href="https://i.imgur.com/1x9TTif.jpg"><img src="https://i.imgur.com/1x9TTif.jpg" style="width:100%"></a>
+      </div>
+      <div class="mySlides3">
+        <a href="https://i.imgur.com/gnM8tVV.jpg"><img src="https://i.imgur.com/gnM8tVV.jpg" style="width:100%"></a>
+      </div>
+      <div class="prev" onclick="plusSlides(-1, 2)">&#10094;</div>
+      <div class="next" onclick="plusSlides(1, 2)">&#10095;</div>
+    </div>
     <h1>ENTERWORKINGS</h1>
     <div class="slideshow-container" uk-lightbox="animation: fade">
       <div class="mySlides2">
@@ -148,10 +156,11 @@
     </div>
   </body>
   <script>
-    var slideIndex = [1,1];
-    var slideId = ["mySlides1", "mySlides2"]
+    var slideIndex = [1,1,1];
+    var slideId = ["mySlides1", "mySlides2", "mySlides3"]
     showSlides(1, 0);
     showSlides(1, 1);
+    showSlides(1, 2);
 
     function plusSlides(n, no) {
       showSlides(slideIndex[no] += n, no);

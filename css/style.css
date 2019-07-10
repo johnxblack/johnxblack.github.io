@@ -237,6 +237,8 @@ nav a:hover {
 
 h1 {
   color: #000;
+  font-weight: bold;
+  font-style: italic;
 }
 
 footer {
