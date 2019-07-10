@@ -36,6 +36,16 @@ body {
   z-index: -1;
 }
 
+#myVideo3 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+  z-index: -1;
+}
+
 #homecontainer {
   display: grid;
   grid-template: 80px 1fr 75px / 3% 1fr 3%;
