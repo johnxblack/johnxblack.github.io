@@ -16,12 +16,6 @@ body {
   overflow-x: hidden;
 }
 
-.error {
-  color: #FF0000;
-  font-size: 1.5em;
-  display: inline;
-}
-
 #myVideo {
   position: fixed;
   top: 0;
