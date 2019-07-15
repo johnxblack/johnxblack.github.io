@@ -475,7 +475,7 @@ nav a::before {
   height: 3px;
   background: #DDD;
   position: absolute;
-  bottom: -.75em;
+  top: 0.4rem;
   left: 0;
   right: 0;
   transform: scale(0, 1);
