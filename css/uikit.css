@@ -272,6 +272,7 @@ h1,
 }
 h2,
 .uk-h2 {
+  color: white;
   font-size: 1.7rem;
   line-height: 1.3;
 }
