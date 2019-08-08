@@ -17,12 +17,13 @@ body {
 }
 
 #myVideo {
-  position: fixed;
+  position: absolute;
+  display: block;
+  margin: 0 auto;
   top: 0;
-  left: 0;
+  left: -960px;
   min-width: 100%;
   min-height: 100%;
-  margin: 0 auto;
   z-index: -1;
 }
 
@@ -512,6 +513,17 @@ nav a:hover {
 
 nav a:hover::before {
   transform: scale(1,1);
+}
+
+#myVideo {
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
 }
 
 #aboutphoto {
