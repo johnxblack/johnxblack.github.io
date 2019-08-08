@@ -108,9 +108,19 @@ body {
     position:absolute;
 }
 
+.formbackground {
+  display: inline;
+  z-index: -1;
+  position: absolute;
+  height: 35%;
+  width: 80%;
+  margin: 0 auto;
+  left: 12%;
+}
+
 #contactform {
+  display: block;
   width: 100%;
-  background-color: #000;
   height: 50%;
   padding: 3%;
 }
@@ -141,12 +151,6 @@ body {
   margin: 0 auto;
   text-align: center;
   display: grid;
-}
-
-#logo:hover {
-  -ms-transform: rotate(-45deg); /* IE 9 */
-  -webkit-transform: rotate(-45deg); /* Safari prior 9.0 */
-  transform: rotate(-45deg); /* Standard syntax */
 }
 
 #logo h2 {
@@ -188,29 +192,19 @@ body {
   justify-self: center;
 }
 
-#aboutphoto3 {
-  width: 60%;
-  position: relative;
-  top: -100%;
-  margin-left: auto;
-}
-
-#aboutphoto4 {
-  display: none;
-}
-
 #aboutblock01 {
   display: grid;
   justify-self: end;
   margin-left: auto;
   position: relative;
-  top: -15%;
-  background: black;
+  top: -12%;
   color: #DDD;
-  padding: 2%;
-  width: 75%;
+  padding: 10%;
+  width: 80%;
   text-align: justify;
   z-index: 1;
+  background-image: url("../img/papertexture3.png");
+  background-size: 100%;
 }
 
 .about {
@@ -457,7 +451,7 @@ img {
 }
 
 #logo {
-  width: 40%;
+  width: 33%;
   transition: .8s ease;
 }
 
@@ -498,6 +492,7 @@ nav a::before {
   height: 3px;
   background: #DDD;
   position: absolute;
+  top: 0.4rem;
   bottom: -.75em;
   left: 0;
   right: 0;
@@ -515,8 +510,7 @@ nav a:hover::before {
 }
 
 #myVideo {
-  position: absolute;
-  display: block;
+  position: fixed;
   margin: 0 auto;
   top: 0;
   left: 0;
@@ -527,51 +521,45 @@ nav a:hover::before {
 
 #aboutphoto {
   display: grid;
-  width: 50%;
+  width: 30%;
   margin-right: auto;
   margin-left: 10%;
 }
 
 #aboutphoto2 {
-  width: 40%;
-  position: relative;
-  top: -25%;
-  justify-self: center;
-}
-
-#aboutphoto3 {
   width: 30%;
   position: relative;
-  top: -100%;
-  margin-left: auto;
-  margin-right: 20%;
-}
-
-#aboutphoto4 {
-  margin-left: auto;
-  display: flex;
-  width: 25%;
-  position: absolute;
-  margin-top: 8%;
-  margin-right: 7%;
-  margin-left: 59%;
+  top: -25%;
+  justify-self: end;
+  margin-right: 10%;
 }
 
 #aboutblock01 {
   display: grid;
   margin: 0 auto;
   top: -35%;
-  background: black;
   color: #DDD;
   padding: 2%;
   width: 70%;
   text-align: justify;
   z-index: 1;
+  background-image: url("../img/papertexture2.png") no-repeat;
+  background-size: 100%;
 }
 
 .videocenter {
   align: center;
   width: 60%;
+}
+
+.formbackground {
+  display: inline;
+  z-index: -1;
+  position: absolute;
+  height: 35%;
+  width: 40%;
+  margin: 0 auto;
+  left: 31%;
 }
 
 #contactform {
