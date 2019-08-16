@@ -397,7 +397,7 @@ img {
             .prev, .next {
             cursor: pointer;
             position: absolute;
-            top: 50%;
+            top: 45%;
             display: flex;
             width: auto;
             padding: 16px;
