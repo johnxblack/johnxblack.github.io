@@ -200,12 +200,13 @@ p {
   z-index: 1;
   background-image: url("../img/papertexture3.png");
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .about {
   padding-left: 2%;
   padding-right: 2%;
-  line-height: 1.42em;
+  line-height: 1.44em;
   font-weight: bold;
 }
 
