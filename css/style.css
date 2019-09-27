@@ -85,6 +85,10 @@ p {
   margin-top: 5%;
 }
 
+.art {
+  width: 100%;
+}
+
 .video-responsive{
     overflow:hidden;
     padding-bottom:56.25%;
@@ -297,11 +301,15 @@ nav li {
 nav a {
   color: #fff;
   opacity: 0;
+  padding: 1%;
+  padding-right: 2%;
+  padding-top: 2%;
   text-decoration: none;
   font-size: 1.25rem;
   font-weight: bold;
   font-style: italic;
   transition: opacity .1s ease-in-out;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 nav a:hover {
@@ -479,6 +487,7 @@ nav a {
   font-size: 1rem;
   transition: .1s ease;
   position: relative;
+  background: none;
 }
 
 nav a::before {
@@ -562,6 +571,10 @@ nav a:hover::before {
 #contactform {
   width: 30%;
   padding-bottom: 2%;
+}
+
+.art {
+  width: 80%;
 }
 
 }
