@@ -93,6 +93,21 @@ p {
   width: 100%;
 }
 
+
+#videomain {
+  grid-area: main;
+  padding-top: 1%;
+  padding-bottom: 5%;
+}
+
+#videomain iframe {
+  margin-bottom: 3%;
+}
+
+#videomain h1 {
+  color: white;
+}
+
 .video-responsive{
     overflow:hidden;
     padding-bottom:56.25%;
@@ -225,7 +240,7 @@ p {
 .flyer {
   margin: 0 auto;
   width: 95%;
-  padding-bottom: 5%;
+  padding-bottom: 2%;
 }
 
 #navlogo {
@@ -525,6 +540,12 @@ nav a:hover::before {
   min-width: 100%;
   height: auto;
   z-index: -1;
+}
+
+.videocenter {
+  align: center;
+  width: 60%;
+  margin: 0 auto;
 }
 
 #aboutphoto {
