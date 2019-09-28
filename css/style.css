@@ -101,7 +101,7 @@ p {
 }
 
 #videomain iframe {
-  margin-bottom: 3%;
+  margin-bottom: 1%;
 }
 
 #videomain h1 {
@@ -240,7 +240,7 @@ p {
 .flyer {
   margin: 0 auto;
   width: 95%;
-  padding-bottom: 2%;
+  padding-bottom: 4%;
 }
 
 #navlogo {
@@ -579,6 +579,7 @@ nav a:hover::before {
   align-self: center;
   margin: 0 auto;
   width: 30%;
+  padding-bottom: 4%;
 }
 
 .formbackground {
